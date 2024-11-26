@@ -3,10 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Torneo di Combattimento</title>
+    <!-- CDN di Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class="bg-gradient-to-r from-blue-500 to-teal-400 text-white font-sans">
+
+    <div class="min-h-screen flex flex-col justify-center items-center mx-4 mt-8">
+
+        <!-- Header -->
+        <header class="text-center mb-8 px-4">
+            <h1 class="text-5xl font-extrabold text-white drop-shadow-md">
+                Torneo di Combattimento
+            </h1>
+            <p class="mt-4 text-xl text-gray-200">I combattenti si sfidano per diventare il campione definitivo!</p>
+        </header>
+
+        <!-- Sezione Combattenti -->
+        <section class="mb-12 w-full px-4">
+            <h2 class="text-3xl font-semibold text-center mb-6">Combattenti del Torneo</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Combattente Card -->
+                <div class="bg-white p-6 rounded-xl shadow-xl hover:scale-105 transition-all duration-300 transform">
+                    <h3 class="text-xl font-semibold text-blue-600">Goku</h3>
+                    <p class="text-gray-500">Potenza: 9001</p>
+                    <p class="mt-2 text-gray-600">Arma: Spada Z</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-xl hover:scale-105 transition-all duration-300 transform">
+                    <h3 class="text-xl font-semibold text-blue-600">Vegeta</h3>
+                    <p class="text-gray-500">Potenza: 8500</p>
+                    <p class="mt-2 text-gray-600">Arma: Spada Saiyan</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-xl hover:scale-105 transition-all duration-300 transform">
+                    <h3 class="text-xl font-semibold text-blue-600">Gohan</h3>
+                    <p class="text-gray-500">Potenza: 8900</p>
+                    <p class="mt-2 text-gray-600">Arma: Kamehameha</p>
+                </div>
+                <!-- Altri combattenti -->
+                <div class="bg-white p-6 rounded-xl shadow-xl hover:scale-105 transition-all duration-300 transform">
+                    <h3 class="text-xl font-semibold text-blue-600">Piccolo</h3>
+                    <p class="text-gray-500">Potenza: 8000</p>
+                    <p class="mt-2 text-gray-600">Arma: Piccolo Power</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sezione Risultati Combattimenti -->
+        <section class="mb-12 w-full px-4">
+            <h2 class="text-3xl font-semibold text-center mb-6">Risultati del Combattimento</h2>
+            <div class="space-y-4 mt-4">
+                <div class="p-4 bg-green-500 rounded-lg shadow-lg text-white">
+                    <p class="text-lg font-semibold">Goku vince contro Freezer</p>
+                </div>
+                <div class="p-4 bg-yellow-500 rounded-lg shadow-lg text-white">
+                    <p class="text-lg font-semibold">Vegeta vince contro Piccolo</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sezione Podio -->
+        <section class="mb-12 w-full px-4">
+            <h2 class="text-3xl font-semibold text-center mb-6">Podio Finale</h2>
+            <div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <!-- Primo posto -->
+                <div class="bg-blue-600 text-white p-8 rounded-xl shadow-xl text-center">
+                    <h3 class="text-4xl font-bold">1° Posto</h3>
+                    <p class="mt-4 text-2xl">Goku - Potenza: 9001</p>
+                </div>
+                <!-- Secondo posto -->
+                <div class="bg-gray-300 p-8 rounded-xl shadow-xl text-center">
+                    <h3 class="text-4xl font-bold">2° Posto</h3>
+                    <p class="mt-4 text-2xl">Gohan - Potenza: 8900</p>
+                </div>
+                <!-- Terzo posto -->
+                <div class="bg-gray-400 p-8 rounded-xl shadow-xl text-center">
+                    <h3 class="text-4xl font-bold">3° Posto</h3>
+                    <p class="mt-4 text-2xl">Vegeta - Potenza: 8500</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Inclusione del file JavaScript -->
     <script type="text/javascript" src="script/script.js"></script>
+
 </body>
 </html>
